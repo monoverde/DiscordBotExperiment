@@ -4,13 +4,14 @@ import random
 import discord
 from dotenv import load_dotenv
 
+#loads the .env variables
 load_dotenv()
+
 #token is in .env so it is not visible easily
 TOKEN = os.getenv('DISCORD_TOKEN')
+
 # This bit just tells you the bot is running on the server
 client = discord.Client()
-speaker = "Fred"
-
 
 # A function that rolls the d6s
 def roll(num_of_dice: int, win_limit: int, speaker: str):
